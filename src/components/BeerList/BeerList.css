@@ -1,0 +1,33 @@
+.BeerList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .beer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Beer {
+    font-weight: bold;
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #dc3545;
+  }
+  
+  .remove-button:hover {
+    color: #c82333;
+  }
+  

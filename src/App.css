@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* S'assure que le conteneur prend toute la hauteur */
+    background: url('./bar.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Force l'image à couvrir tout l'écran */
+    position: relative;
+    z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajoute une couche semi-transparente */
+    backdrop-filter: blur(3px);  /* Applique l'effet de flou */
+    z-index: -1;
   }
-  to {
-    transform: rotate(360deg);
+  
+.app-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-}
+  
+  h1 {
+    color: #d4ad00;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-beer {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  /* Style pour la navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-list li {
+    margin: 0 15px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .input-beer {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
