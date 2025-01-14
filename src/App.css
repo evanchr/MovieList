@@ -10,7 +10,7 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* S'assure que le conteneur prend toute la hauteur */
-    background: url('./bar.jpeg') no-repeat center center fixed;
+    background: url('/public/cinema.jpg') no-repeat center center fixed;
     background-size: cover; /* Force l'image à couvrir tout l'écran */
     position: relative;
     z-index: 1;
@@ -40,14 +40,14 @@ html, body {
   }
   
   h1 {
-    color: #d4ad00;
+    color: #003887;
   }
   
   .form-container {
     margin-bottom: 20px;
   }
   
-  .input-beer {
+  .input-movie {
     padding: 10px;
     width: 200px;
     border: 1px solid #ccc;
@@ -90,7 +90,7 @@ html, body {
     border-radius: 5px;
   }
   
-  .input-beer {
+  .input-movie {
     padding: 10px;
     width: 200px;
     border: 1px solid #ccc;
